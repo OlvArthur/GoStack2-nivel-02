@@ -1,0 +1,3 @@
+[submodule "primeiro-projeto-node/desafioRepo"]
+	path = primeiro-projeto-node/desafioRepo
+	url = https://github.com/OlvArthur/GoStack2-desafio-fundamentos-node.js
