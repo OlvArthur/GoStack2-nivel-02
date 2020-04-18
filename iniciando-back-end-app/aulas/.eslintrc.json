@@ -23,6 +23,12 @@
     "prettier/prettier": "error",
     "@typescript-eslint/camelcase": "off",
     "class-methods-use-this": "off",
+    "@typescript-eslint/no-unused-vars": [
+      "error",
+      {
+        "argsIgnorePattern": "_"
+      }
+    ],
     "import/extensions": ["error", "ignorePackages", { "ts": "never" }],
     "implicit-arrow-linebreak": "off",
     "function-paren-newline": "off"
