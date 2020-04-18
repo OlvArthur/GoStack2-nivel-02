@@ -2,6 +2,7 @@ import { getRepository } from 'typeorm';
 import { compare } from 'bcryptjs';
 import { sign } from 'jsonwebtoken';
 
+import authConfig from '../config/auth';
 import User from '../models/User';
 
 interface RequestDTO {
@@ -30,9 +31,11 @@ class AuthenticateUserService {
       throw Error('Login failed: Invalid username or password');
     }
 
-    const token = sign({}, '19b8e9c87232224295509c0367c6aaaf', {
+    const { expiresIn, secret } = authConfig.jwt;
+
+    const token = sign({}, secret, {
       subject: user.id,
-      expiresIn: '1d',
+      expiresIn,
     });
 
     return { user, token };
