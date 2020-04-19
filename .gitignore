@@ -3,4 +3,16 @@ primeiro-projeto-node/aulas/yarn.lock
 
 
 iniciando-back-end-app/aulas/node_modules
-iniciando-back-end-app/aulas/yarn.lock
+
+iniciando-back-end-app/aulas/tmp/*
+!iniciando-back-end-app/aulas/tmp/.gitkeep
+
+
+iniciando-back-end-app/desafio/.idea/
+iniciando-back-end-app/desafio/.vscode/
+iniciando-back-end-app/desafio/node_modules/
+iniciando-back-end-app/desafio/build/
+iniciando-back-end-app/desafio/temp/
+
+iniciando-back-end-app/desafio/tmp/*
+iniciando-back-end-app/desafio/!tmp/.gitkeep
