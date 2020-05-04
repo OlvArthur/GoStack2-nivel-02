@@ -37,11 +37,9 @@ class ImportTransactionsService {
 
       if (!title || !type || !value || !category) return;
 
-      const valueNumber = Number(value);
-
       categories.push(category);
 
-      transactions.push({ title, type, value: valueNumber, category });
+      transactions.push({ title, type, value, category });
     });
 
     await new Promise(resolve => parseCSV.on('end', resolve));
